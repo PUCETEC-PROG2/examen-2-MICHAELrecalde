@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>{{movies}}</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="bg-primary text-white p-4 text-center">
+                <h1>Peliculas</h1>
+            </div>
+            <p>Nombre de la pelicula:<strong>{{ movies | capfirst }}</strong></p>
+            <ul>
+                <li>Año de publicación:{{movies.year}}</li>
+                <li>Director:{{movies.director}}</li>
+                <li>Genero{{movies.gender}}</li>
+                <li>Sinopsis{{movies.synopsis}}</li>
+                
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>{%block movies%}</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="bg-primary text-white p-4 text-center">
+                <h1>Peliculas</h1>
+            </div>
+        
+            <ul class="list-group">
+                {% for movies in movies %}
+                <li class="list-group-item">
+                    <a href="movies/{{movies.id}}">{{ movies | capfirst }}</a>
+                    <p>{{movies.name}}</p>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </body>
+</html>
